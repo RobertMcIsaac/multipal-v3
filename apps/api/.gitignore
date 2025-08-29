@@ -115,3 +115,7 @@ dmypy.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+
+# Alembic
+alembic.ini
+alembic/*.log

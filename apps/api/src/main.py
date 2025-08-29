@@ -9,7 +9,8 @@ from fastapi import Depends, FastAPI, HTTPException, Query
 # from .models import Baby
 # from .db import engine #must import models BEFORE engine
 # from .db import create_db_and_tables
-from config import get_settings
+# from config import get_settings
+from src.config import get_settings as get_settings
 
 from sqlmodel import Field, Session, SQLModel, create_engine, select
 
@@ -42,9 +43,9 @@ SessionDep = Annotated[Session, Depends(get_session)]
 
 app = FastAPI()
 
-@app.on_event("startup")
-def on_startup():
-    create_db_and_tables()
+# @app.on_event("startup")
+# def on_startup():
+#     create_db_and_tables()
 
 # DEV ONLY
 @app.get("/_debug/env")
