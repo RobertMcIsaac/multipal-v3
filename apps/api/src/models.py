@@ -1,0 +1,1 @@
+from babies.models import Baby as Baby

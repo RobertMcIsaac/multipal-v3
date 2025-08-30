@@ -1,17 +1,26 @@
-## Guides
+### WIP
 
-Next.js:
-https://nextjs.org/docs/app/getting-started/installation
+## Setup
+Next.js 
+Supabase server-side auth
+FastApi (synchronous with plans to adjust to async in future)
+Supabase CLI (for dev) - postreSQL
+SQLModel
+Alembic
 
-Supabase server-side auth for Next.js:
-https://supabase.com/docs/guides/auth/server-side/nextjs
+## Running the project
 
-FasApi project structure: 
-https://supabase.com/docs/guides/auth/server-side/nextjs
+Web (Next.js)
+``` bash
+npm run dev
+```
 
-Supbase connecting to DB:
-https://supabase.com/docs/guides/database/connecting-to-postgres
+api (FastApi)
+```bash
+fastapi dev src/main.py
+```
 
-Supabase CLI setup:
-https://supabase.com/docs/reference/cli/introduction
-https://supabase.com/docs/guides/local-development
+Supabase CLI
+```bash
+supabase start
+```
